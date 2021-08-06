@@ -1,0 +1,19 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<script type="text/javascript" src={{cdn_js}}></script>
+
+<div class = "plot">
+    <h1>
+        Test plot chart
+    </h1>
+    <p>
+        This is my test plot chart created with bokeh.
+    </p>
+    <p>
+        It shows quote of Holcim AG stock daily price fetched from yahoo finance with pandas_dataread library. 
+    </p>
+</div>
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}
